@@ -9,6 +9,7 @@ require "json"
 require "open-uri"
 
 puts "The world will be created in 1 second"
+Bookmark.destroy_all
 Movie.destroy_all
 
 url = "http://tmdb.lewagon.com/movie/top_rated"
