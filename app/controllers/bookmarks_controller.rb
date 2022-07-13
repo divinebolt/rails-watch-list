@@ -7,10 +7,8 @@ before_action :set_list, only: [:new, :create]
   end
 
   def create
-
     @bookmark = Bookmark.new(bookmark_params)
     @bookmark.list = @list
-
     if @bookmark.save
       redirect_to list_path(@list)
     else
