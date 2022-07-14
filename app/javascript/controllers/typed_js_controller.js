@@ -5,7 +5,7 @@ export default class extends Controller {
   connect() {
     new Typed(this.element, {
       strings: ["Drama", "Classic", "Comedy", "Action", "Romantic", "Thriller", "Horror", "Slasher"],
-      typeSpeed: 40,
+      typeSpeed: 20,
       loop: true,
       loopCount: Infinity,
       showCursor: false
