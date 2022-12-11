@@ -1,5 +1,5 @@
 class ListsController < ApplicationController
-before_action :set_list, only: [:show, :destroy]
+  before_action :set_list, only: [:show, :destroy]
 
   def index
     @lists = List.all
@@ -16,7 +16,7 @@ before_action :set_list, only: [:show, :destroy]
   def create
     @list = List.new(list_params)
     if @list.save
-      redirect_to lists_path
+      redirect_to list_path(@list)
     else
       render :new
     end
